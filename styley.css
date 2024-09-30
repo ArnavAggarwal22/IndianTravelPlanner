@@ -1,0 +1,139 @@
+/* General body styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+/* Hero section with full-screen background image */
+.hero {
+    height: 100vh;
+    background: url('https://source.unsplash.com/1600x900/?india,travel') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #6e110a;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero h1 {
+    font-size: 3em;
+    text-shadow: 3px 3px 8px rgba(52, 0, 0, 0.5);
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.cta-btn {
+    padding: 15px 30px;
+    background: #d22114;
+    color: white;
+    border-radius: 50px;
+    font-size: 1.2em;
+    text-decoration: none;
+    box-shadow: 0 5px 15px rgba(235, 4, 4, 0.5);
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cta-btn:hover {
+    background: #3f0202;
+    box-shadow: 0 8px 20px rgba(138, 7, 7, 0.7);
+}
+
+/* Container section */
+.container {
+    padding: 50px 20px;
+    background: linear-gradient(145deg, #3f0202, #242524);
+    color: #fff;
+    border-radius: 16px;
+    max-width: 800px;
+    margin: -50px auto 0;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.container h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+/* Input styling */
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 15px 0;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 1.1em;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    border-color: #ff9800;
+    box-shadow: 0 0 10px rgba(255, 152, 0, 0.3);
+    outline: none;
+}
+
+/* Button styling */
+button {
+    width: 100%;
+    padding: 15px;
+    background: #ff5722;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.3em;
+    cursor: pointer;
+    box-shadow: 0 6px 12px rgba(255, 87, 34, 0.3);
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: #e64a19;
+    box-shadow: 0 8px 16px rgba(255, 87, 34, 0.5);
+}
+
+/* Itinerary section */
+#itinerary {
+    margin-top: 30px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    color: #333;
+}
+
+/* Footer */
+.footer {
+    background: #232526;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2em;
+    }
+    
+    .hero p {
+        font-size: 1.2em;
+    }
+
+    .container h2 {
+        font-size: 2em;
+    }
+}
